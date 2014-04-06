@@ -1,0 +1,38 @@
+Resposta questao 3:
+
+3. Faça um Programa que peça um número e então mostre a mensagem O número
+informado foi [número].
+
+
+
+// Para numeros inteiros
+
+int main(){
+
+    int num;
+
+    printf("Entre com um numero: \n");
+    scanf("%d",&num);
+
+    printf("O numero informado foi [%d].",num);
+
+    return 0;
+}
+
+
+
+// Para numeros fracionários
+
+#include <stdio.h>
+
+int main(){
+
+    float num;
+
+    printf("Entre com um numero: \n");
+    scanf("%f",&num);
+
+    printf("O numero informado foi [%f].",num);
+
+    return 0;
+}

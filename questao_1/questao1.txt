@@ -1,0 +1,12 @@
+Resposta questao 1:
+
+1. Faça um Programa que mostre a mensagem "Alo mundo" na tela.
+
+#include <stdio.h>
+
+int main(){
+
+    printf("Alo Mundo\n");
+
+    return 0;
+}

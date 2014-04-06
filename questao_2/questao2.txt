@@ -1,0 +1,18 @@
+Resposta questao 2:
+
+2. O que faz o seguinte programa?
+
+#include <stdio.h>
+
+int main()
+{
+    int x;
+    scanf("%d",&x);
+    printf("%d",x);
+    return (0);
+}
+
+
+O programa recebe um número inteiro digitado pelo usuário e armazena na 
+variável x em seguida ele imprime na tela o valor que foi armazenado em x, 
+depois o programa é finalizado.
