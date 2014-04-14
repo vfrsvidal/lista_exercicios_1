@@ -1,0 +1,33 @@
+Resposta questao 20:
+
+20. Faça um programa que peça o tamanho de um arquivo para download (em MB) 
+e a velocidade de um link de Internet (em Mbps), calcule e informe o tempo 
+aproximado de download do arquivo usando este link (em minutos).
+
+Mbps = Megabits por segundo = 1000 kbps
+
+taxa de download em KBps: (link_mbps*1000000)/8192
+
+Tempo de download em segundos: (tamanho_arquivo_MB*1024)/taxa_de_download
+
+A fórmula fica:
+
+((tamanho_arquivo_MB*1024)/((mbps*1000000)/8192))/60 = Tempo de download
+em minutos.
+
+# include <stdio.h>
+
+void main(){
+
+    float tamanho_arquivo_MB, link_mbps, tempo_minutos;
+
+    printf("Entre com o tamanho do arquivo em MB: \n");
+    scanf("%f",&tamanho_arquivo_MB);
+
+    printf("Entre com a velocidade do link de internet para o download de arquivo em Mbps: \n");
+    scanf("%f",&link_mbps);
+
+    tempo_minutos = (((tamanho_arquivo_MB*1024)/((link_mbps*1000000)/8192))/60);
+
+    printf("o tempo aproximado de download do arquivo usando este link eh de %f minutos.\n",tempo_minutos);
+}
