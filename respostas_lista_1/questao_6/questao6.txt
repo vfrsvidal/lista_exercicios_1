@@ -1,0 +1,8 @@
+Resposta questao 6:
+
+6. Explique if (num=10) ... O que irá acontecer?
+
+Sempre será executado o que está dentro do if, pois estamos atribuindo um
+valor a variável num (no caso o valor 10) que é diferente de 0, ou seja a
+condição sempre será verdadeira para valores diferentes de 0 (somente o 
+valor 0 é falso).

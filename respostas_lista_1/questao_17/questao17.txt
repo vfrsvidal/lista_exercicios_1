@@ -1,0 +1,54 @@
+Resposta questao 17:
+
+17. Tendo como dados de entrada a altura e o sexo de uma pessoa, construa 
+um algoritmo que calcule seu peso ideal, utilizando as seguintes fórmulas:
+
+a. Para homens: (72.7*h) - 58
+b. Para mulheres: (62.1*h) - 44.7 (h = altura)
+c. Peça o peso da pessoa e informe se ela está dentro, acima ou abaixo do 
+peso.
+
+# include <stdio.h>
+
+void main(){
+
+    float h, result, peso;
+    char x[10];
+
+    printf("Entre com seu sexo (masculino ou feminino): \n");
+    scanf("%s",&x);
+
+    printf("Entre com sua altura em metros: \n");
+    scanf("%f",&h);
+
+    /* Lembrar que a funcao strcmp tem que ser comparada a 0 porque quando eh True a comparacao, ela retorna falso
+    e 0 eh igual a falso*/
+
+    if (strcmp(x, "masculino") == 0){
+        result = ((72.7*h)-58);
+        printf("Entre com seu peso atual: \n");
+        scanf("%f",&peso);
+        printf("Seu peso ideal eh: %f\n",result);
+        if (peso > (result+1)){
+            printf("Voce esta acima do peso!\n");
+        } else if (peso < (result-1)) {
+            printf("Voce esta abaixo do peso!\n");
+        } else {
+            printf("Voce esta dentro do peso (tolerancia de 1kg para mais ou para menos)!\n");
+        }
+    } else if (strcmp(x, "feminino") == 0){
+        result = ((62.1*h)-44.7);
+        printf("Entre com seu peso atual: \n");
+        scanf("%f",&peso);
+        printf("Seu peso ideal eh: %f\n",result);
+        if (peso > (result+1)){
+            printf("Voce esta acima do peso!\n");
+        } else if (peso < (result-1)) {
+            printf("Voce esta abaixo do peso!\n");
+        } else {
+            printf("Voce esta dentro do peso (tolerancia de 1kg para mais ou para menos)!\n");
+        }
+    } else {
+        printf("O valor inserido eh invalido!\n");
+    }
+}

@@ -1,0 +1,22 @@
+Resposta questao 12:
+
+12. Faça um Programa que pergunte quanto você ganha por hora e o número 
+de horas trabalhadas no mês. Calcule e mostre o total do seu salário no 
+referido mês.
+
+# include <stdio.h>
+
+int main(){
+
+    float sal,h;
+
+    printf("Quanto voce ganha por hora trabalhada?\n");
+    scanf("%f",&sal);
+
+    printf("Quantas horas voce trabalhou durante o mes?\n");
+    scanf("%f",&h);
+
+    printf("Seu salario equivale a: %f\n",(sal*h));
+
+    return 0;
+}
