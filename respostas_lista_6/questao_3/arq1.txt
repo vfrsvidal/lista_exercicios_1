@@ -1,0 +1,3 @@
+testando esse programa aqui
+/* tudo que esta sendo escrito aqui dentro
+soh sera escrito no arquivo 1 ou arq1.txt*/

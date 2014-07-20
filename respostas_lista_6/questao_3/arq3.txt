@@ -1,0 +1,5 @@
+testando esse programa aqui
+/* tudo que esta sendo escrito aqui dentro
+soh sera escrito no arquivo 1 ou arq1.txt*/
+testando o arquivo dois 
+/* tudo aqui dentro eh do arquivo 2 ou arq2.txt*/
