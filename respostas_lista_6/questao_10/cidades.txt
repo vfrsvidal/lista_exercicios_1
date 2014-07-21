@@ -1,0 +1,6 @@
+Lagos: 16060307
+Karachi: 13969284
+Xangai: 17836133
+Istambul: 13907015
+Mumbai: 12478447
+Sao Paulo: 11821873
